@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+nav {
+  background-color: black;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  margin-left: 3vw;
+}
+
+#navbarSupportedContent {
+  justify-content: center;
+  margin-left: -13vw;
+}
+
+#navbarSupportedContent .nav-link {
+  margin-left: 3vw;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.featured-shows-pic-container {
+  position: relative;
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
+.featured-shows-pic-container img {
+  width: 100%;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 6.0rem;
+}
+
+.month {
+  border: 1px solid rgb(196, 196, 196);
+  padding-left: 2vw;
+  margin: 0 20vw;
+  background-color: rgb(247, 247, 247);
+  font-size: 1.5rem;
+}
+
+.show-list {
+  margin: 0 20vw 3vh 20vw;
+}
+
+.show-1, .show-2, .show-3, .show-4 {
+  display: grid;
+  grid-template: 1fr / repeat(3, 1fr);
+  padding: 6vh 0 3vh 2vw;
+  border-bottom: 1px solid rgb(196, 196, 196);
+}
+
+.show-1 .show-details,
+.show-2 .show-details,
+.show-3 .show-details,
+.show-4 .show-details {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  padding-left: 1vw;
+}
+
+.read-more-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.read-more-buttons button {
+  background-color: rgb(235, 182, 37);
+  color: white;
+  padding: 1vh 1vw;
+  border: 1px solid rgb(186, 159, 89);
+  font-size: 1.5rem;
+}
+
+.footer {
+  display: grid;
+  grid-template: repeat(6, 1fr) / repeat(2, 0.75fr) repeat(3, 1fr);
+  grid-gap: 3vw;
+  padding: 15vh 5vw 15vh 10vw;
+  background-color: black;
+  color: white;
+}
+
+.footer img {
+ grid-row: 1 / span 5;
+ grid-column: 1 / span 2;
+ width: 100%;
+ height: auto;
+}
+
+/* Footer Info Section Begins */
+
+.footer h2 {
+  font-size: 2.5rem;
+}
+
+.footer span {
+  font-size: 0.8rem;
+}
+
+.footer .info {
+  grid-row: 1 / span 5;
+  grid-column: 3 / span 1;
+  display: grid;
+}
+
+.footer .info .address,
+.footer .info .email,
+.footer .info .call {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%
+}
+
+.footer .info .address .fas,
+.footer .info .email .far,
+.footer .info .call .fas {
+  color: rgb(167, 109, 3);
+  font-size: 2rem;
+}
+
+/* Footer Shows Section Begins */
+
+.footer .shows {
+  grid-row: 1 / span 6;
+  grid-column: 4 / span 1;
+  display: grid;
+}
+
+/* Footer Social Section Begins */
+
+.footer .social {
+  grid-row: 1 / span 6;
+  grid-column: 5 / span 1;
+  display: grid;
+}
